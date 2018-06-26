@@ -1,0 +1,18 @@
+<input [type]="number">
+<br><br>
+<div>
+	Hello {{nom}} !
+</div>
+<br>
+<input [value]="deuxLumieres" (input)="deuxLumieres=$event.target.value">
+{{deuxLumieres}}
+
+<p *ngIf="status">p1</p>
+<br>
+<p *ngIf="!status">p2</p>
+<!-- {{status}} -->
+<button (click)="status=!status">Cliquer ici</button>
+
+<ul>
+	<li *ngFor="let item of texts">{{item.chiffre}}</li>
+</ul>

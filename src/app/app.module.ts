@@ -3,14 +3,18 @@ import { NgModule } from '@angular/core';
 
 
 import { AppComponent } from './app.component';
+import { DirectiveComponent } from './directive/directive.component';
+import { LiaisonsComponent } from './liaisons/liaisons.component';
 
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    DirectiveComponent,
+    LiaisonsComponent
   ],
   imports: [
-    BrowserModule
+    BrowserModule,
   ],
   providers: [],
   bootstrap: [AppComponent]
